@@ -357,14 +357,32 @@ a {
 
 /* ....................... responsive ....................  */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .nav-list {
-    display: none;
+    position: fixed;
+    top: 70px;
+    flex-direction: column;
+    right: -100%;
+    width: 100vw;
+    background-color: #111111;
+    text-align: center;
+    transition: 0.5s;
+    height: 100vh;
   }
   .menu {
     display: block;
   }
+  .list{
+    margin: 3vw;
+  }
 
+  .active{
+    right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  
   .profile {
   
     display: grid;
